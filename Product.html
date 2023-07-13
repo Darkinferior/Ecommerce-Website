@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="EN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="wed development course, WD course, website development course, online internship">
+    <title>Ecommers App</title>
+    <link rel="shortcut icon" href="image/logo.webp" type="image/x-icon">
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- customised css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- owl carousel css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Nav bar code -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <div class="logo">
+                    <img src="image/logo.webp" width="50px" alt="logo">
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="AboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            ITEMS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="index.html #101">SKECHERS</a></li>
+                            <li><a class="dropdown-item" href="index.html #100">CLOTHING</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="AboutUs.html">AboutUs</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ----------------------------------------------------------------------------------------------------- -->
+
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Four Columns grip -->
+                <div class="row">
+                    <div class="product-image">
+                        <div><img class="active d-flex align-items-center justify-content-center" src="image/product1/puma1/FKPUA2230738001_RED.jpg_230Wx334H"
+                               width="auto" height="80%" alt="Puma"></div>
+
+                        <div class="column">
+                            <img src="image/product1/puma1/FKPUA2230738001_RED_alt1.jpg_2000Wx3000H" alt="Puma"
+                                onclick="myFunction(this);">
+                        </div>
+                        <div class="column">
+                            <img src="image/product1/puma1/FKPUA2230738001_RED_alt2.jpg_2000Wx3000H" alt="Puma"
+                                onclick="myFunction(this);">
+                        </div>
+                        <div class="column">
+                            <img src="image/product1/puma1/FKPUA2230738001_RED_alt3.jpg_2000Wx3000H" alt="Puma"
+                                onclick="myFunction(this);">
+                        </div>
+                        <div class="column">
+                            <img src="image/product1/puma1/FKPUA2230738001_RED_alt4.jpg_2000Wx3000H" alt="Puma"
+                                onclick="myFunction(this);">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The expanding image container -->
+
+                <div class="containe ">
+                    <!-- Close the image -->
+
+                    <span onclick="this.parentElement.style.display='block'" class="closebtn">&times;</span>
+
+                    <!-- Expanded image -->
+                    <img id="expandedImg" style="width: 100%;">
+
+
+                    <!-- Image text -->
+                    <div id="imgtext">img is present heare</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div>
+                    <h1>PUMA</h1>
+                </div>
+                <div itemprop="name" class="pdp-pname block-ellipsis">Ferrari Bao Kart Ps Synthetic Lace Up Kids Unisex
+                    Sneakers</div>
+                <br>
+                <br>
+                <div>
+                    <table width="80%" cellspacing="0" cellpadding="0">
+                        <tbody>
+                            <tr>
+                                <td class="te-size"><b> ₹2999 </b></td>
+                                <td class="text-decoration-line-through te-opc">₹4999</td>
+                                <td class="te-colour">40%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <br>
+                <br>
+                <br>
+                <button class="accordion">Product Details</button>
+                <div class="panel">
+                    <h3>Product Description</h3>
+                    <p>Ferrari bao kart ps </p>
+
+                    <table width="100%" cellspacing="0" cellpadding="0">
+                        <tbody>
+                            <tr>
+                                <td> <b> Warranty</b></td>
+                                <td> 3 months</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table width="100%" cellspacing="0" cellpadding="0">
+                        <tbody>
+                            <tr>
+                                <td> <b> Country of Origin</b></td>
+                                <td> Vietnam</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table width="100%" cellspacing="0" cellpadding="0">
+                        <tbody>
+                            <tr>
+                                <td> <b> Material</b></td>
+                                <td> Synthetic</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <button class="accordion">About brand</button>
+                <div class="panel">
+                    <p>PUMA:
+
+                        Puma is a major German multinational company that produces athletic shoes, footwear & other
+                        sportswear headquartered in Herzogenaurach, Germany. Puma also symbolizes combination of speed,
+                        power & elegance often exhibited by professional athletes. Today it is a well known sports
+                        lifestyle & is one of the most desirable brands in the world, offering world class puma shoes
+                        for men & women. Puma Products includes sportswear like Puma shoes, sandals, Slippers, floaters,
+                        tracksuits, bags, gym accessories, casual apparels & many more. You can reach out to Brand at:
+                        1-800-102-7862 or customercareindia@puma.com. Marketed By / Distributed By - Puma India, Address
+                        - 509, Chinmaya Mission Hospital Rd, Indira Nagar 1st Stage, Defence Colony, Indiranagar,
+                        Bengaluru, Karnataka 560038</p>
+                </div>
+            
+                <a class="btn btn-primary" href="address.html" role="button">Buy Now</a>
+                
+
+            </div>
+        </div>
+    </div>
+    
+    <br><br>
+    <!-- footer -->
+    <footer>
+        <div class="container ">
+            <div class="logo">
+                <img src="image/logo.webp" width="75" height="auto" alt="logo">
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-3 text-white ">
+                    <h5>Explore</h5>
+                    <a href="AboutUs.html" class=" max">About Us</a><br>
+                    <a href="index.html #108" class=" max">Contact Us</a><br>
+                </div>
+                <div class="col-md-3 text-white ">
+                    <h5>Document</h5>
+                    <a href="" class=" max">Terms and condition</a><br>
+                    <a href="" class=" max">Privacy Policies</a><br>
+                    <a href="" class=" max">Refund Policies</a><br>
+                </div>
+                <div class="col-md-3 text-white ">
+                    <h5>Social Media</h5>
+                    <a href=""><img src="image/product1/linkdine.png" class=" max" alt="linkdine"></a>
+                    <a href=""><img src="image/product1/footer_instagram.png" class=" max" alt="instagram"></a>
+                </div>
+                <div class="col-md-3 text-white ">
+                    <h5>Office Address</h5>
+                    <p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7777.940021652081!2d77.633255!3d12.909649!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xab63d9ed516b21d!2sCoincent!5e0!3m2!1sen!2sin!4v1671380352388!5m2!1sen!2sin"
+                            width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </p>
+                </div>
+
+            </div>
+            <hr>
+            <div class="copy-right">
+                <p class="text-white">
+                    &copy;copyright 2021, Ecommers App. All rights reserved &reg;
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>
